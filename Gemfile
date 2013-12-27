@@ -46,3 +46,7 @@ ruby "2.0.0"
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+#
+#
+# Processsing.js
+gem 'processingjs-source', '~> 0.0.5'
