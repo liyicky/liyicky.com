@@ -15,9 +15,17 @@
 
   function adjustWindow() {
     // Init Skrollr
-    var s = skrollr.init();
-    $homeSlide.height(1000);
-    $bottomSlide.height(550);
+    var s = skrollr.init({
+      render: function(data) {
+      }
+    });
+
+    winH = $window.height();
+    if(winH <= 550) {
+      winH = 550;
+    }
+    $homeSlide.height(winH);
+    $bottomSlide.height(winH);
     s.refresh($('.homeSlide'));
     s.refresh($('.bottomSlide'));
   }

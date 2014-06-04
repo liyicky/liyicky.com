@@ -166,7 +166,7 @@ main {
 
 .homeContent {
   width: 680px;
-  height: 100%;
+  height: 400px;
   background-color: rgba(245, 242, 235, 0.9);
 
   border: 1px;
@@ -215,7 +215,7 @@ main {
 
 /* Slide 2 */
 #slide-2 .bcg {
-  /*background-image:url('../img/bcg_slide-2.jpg')*/
+  background-image:url('../img/bcg_slide-2.jpg')
 }
 #slide-2 .hsContent {
 	margin-left: -450px;
