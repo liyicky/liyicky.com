@@ -111,9 +111,6 @@ body, html {
 	min-height: 100%;
 	background-color: #000000;
 }
-body {
-
-}
 .no-js {
 	padding-top: 106px;
 }
@@ -136,14 +133,6 @@ section {
 }
 main {
 	overflow-x: hidden;
-}
-#preload {
-	width: 1px;
-	height: 1px;
-	overflow: hidden;
-	position: absolute;
-	top: 0;
-	left: 0;
 }
 
 .bcg {
@@ -177,6 +166,8 @@ main {
 
 
 .hsContainer {
+  display: table;
+  table-layout: fixed;
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
@@ -184,43 +175,52 @@ main {
 }
 
 .hsContent {
-	max-width: 700px;
-	position: absolute;
-	left: 50%;
-	top: 50%;
+	max-width: 450px;
+  margin: -150px auto 0 auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 8%;
+  text-align: center;
+  color: #ebebeb;
 }
-	.hsContent h2  {
-		color: #fff8de;
-		background-color: rgba(0,0,0,0.5);
-		padding: 10px 5px;
-		font-size: 35px;
-		line-height: 38px;
-		margin-bottom: 12px;
-	}
-	.hsContent p {
-		width: 400px;
-		color: #b2b2b2;
-	}
-	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
-	}
+
+.hsContent p {
+  width: 400px;
+}
+
+.hsContent a {
+  color: #b2b2b2;
+  text-decoration: underline;
+}
 
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
-#slide-1 .hsContent {
-	bottom: 200px;
-	top: auto;
-}
 
 /* Slide 2 */
 #slide-2 .bcg {
-  background-image:url('../img/bcg_slide-2.jpg')
+  background-image:url('../img/bcg_slide-2.jpg');
 }
-#slide-2 .hsContent {
-	margin-left: -450px;
-	bottom: 200px;
-	top: auto;
+
+#slide-3 .bcg {
+  background-attachment: initial;
+}
+
+#slide-3 .hsContent {
+  padding: 0;
+  vertical-align: initial;
+}
+
+#slide-3_gif {
+  position: absolute;
+  height: 281px;
+  width: 500px;
+  background-image:url('../img/bcg_slide-3.gif');
+}
+
+#slide-4 .bcg {
+  background: none;
+  background-color: #010101;
+  text-align: center;
 }
 
 
