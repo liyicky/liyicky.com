@@ -213,7 +213,7 @@ main {
 #lastSlide {position: relative;}
 #lastSlide .bcg {background-image:url('../img/lastSlide.jpg');}
 #lastSlide .bcg2 { background-image:url('../img/lastSlideb.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1;}
-#lastSlide .bcg3 { background: none; background-color: #010101; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+#lastSlide .bcg3 { background: none; background-color:  #1B4247; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
 
 #aboutme_gif {
   position: absolute;
