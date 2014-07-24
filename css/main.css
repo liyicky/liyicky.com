@@ -195,19 +195,38 @@ main {
 
 /* Slide 1 */
 #slide-1 .bcg {background-image:url('../img/bcg_slide-1.jpg')}
+#slide-1 .liyickyHolder {
+  height: 100px;
+  width: 100%;
+  font-size: 120px;
+  text-align: left;
+  margin-bottom: 80%;
+}
+
 
 /* Slide 2 */
 #slide-2 .bcg {
   background: none;
   background-color: #010101;
-  height: 310px;
+  height: 210px;
   text-align: center;
 }
+
+#lastSlide table{
+  width: 264px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#lastSlide .row1 {width: 64px; height: 64px; content:url('../img/WordPress.png') no-repeat center;}
+#lastSlide .row2 {width: 64px; height: 64px; content:url('../img/GitHub.png') no-repeat center;}
+#lastSlide .row3 {width: 64px; height: 64px; content:url('../img/LinkedIn.png') no-repeat center;}
+#lastSlide .row4 {width: 64px; height: 64px; content:url('../img/Twitter.png') no-repeat center;}
 
 #lastSlide {position: relative;}
 #lastSlide .bcg {background-image:url('../img/lastSlide.jpg');}
 #lastSlide .bcg2 { background-image:url('../img/lastSlideb.jpg'); position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 1;}
-#lastSlide .bcg3 { background: none; background-color:  #1B4247; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
+#lastSlide .bcg3 { background: none; background-color: #1B4247; position: fixed; bottom: 0; left: 0; opacity: 0; z-index: 2;}
 
 #aboutme_gif {
   position: absolute;

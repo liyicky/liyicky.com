@@ -22,8 +22,8 @@
     });
 
     winH = $window.height();
-    if(winH <= 550) {
-      winH = 550;
+    if(winH <= 760) {
+      winH = 760;
     }
     $homeSlide.height(winH);
     $lastSlide.height(winH*3);
