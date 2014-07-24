@@ -3,7 +3,7 @@
   $window      = $(window);
   $homeSlide   = $('.homeSlide');
   $lastSlide   = $('.lastSlide');
-  $slide2      = $('.slide2');
+  $barSlide    = $('.barSlide');
   $body        = $('body');
 
   // Fade in images for sections
@@ -27,7 +27,6 @@
     }
     $homeSlide.height(winH);
     $lastSlide.height(winH*3);
-    $slide2.height(winH);
     s.refresh($('.homeSlide'));
   }
 })( jQuery );

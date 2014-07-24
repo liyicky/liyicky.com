@@ -198,16 +198,10 @@ main {
 
 /* Slide 2 */
 #slide-2 .bcg {
-  background-image:url('../img/bcg_slide-2.jpg');
-}
-
-#slide-3 .bcg {
-  background-attachment: initial;
-}
-
-#slide-3 .hsContent {
-  padding: 0;
-  vertical-align: initial;
+  background: none;
+  background-color: #010101;
+  height: 310px;
+  text-align: center;
 }
 
 #lastSlide {position: relative;}
