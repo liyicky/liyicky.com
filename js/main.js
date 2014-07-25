@@ -17,6 +17,7 @@
   function adjustWindow() {
     // Init Skrollr
     var s = skrollr.init({
+      smoothScrolling: 'true',
       render: function(data) {
       }
     });
