@@ -27,7 +27,7 @@
       winH = 760;
     }
     $homeSlide.height(winH);
-    $lastSlide.height(winH*3);
+    $lastSlide.height(winH*2);
     s.refresh($('.homeSlide'));
   }
 })( jQuery );
