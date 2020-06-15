@@ -3,15 +3,25 @@
 
 $white: white;
 $black: black;
+$green: green;
 
 .navbar {
         margin-bottom: 0;
-        background: $black;
+	background: $white;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	height: 50px;
+}
+.shrink {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	height: 25px;
 }
 body {
-        background: $black;
-        color: $white;
+        background: $white;
+        color: pink;
         font-family: 'Merriweather', sans-serif;
+	padding-top: 50px;
 }
 h1,
 h2 {
@@ -19,30 +29,30 @@ h2 {
 }
 p {
         font-size: 16px;
-        color: $white;
+        color: $black;
 }
 a:visited {
         color: $black;
 }
 .jumbotron {
         background: #0048CD;
-        color: $white;
+        color: $black;
         text-align: center;
         p {
-                color: $white;
+                color: $black;
                 font-size: 26px;
         }
 }
 .link {
-        color: $white;
+        color: $black;
 }
 .btn-primary {
-        color: $white;
-        border-color: $white;
+        color: $black;
+        border-color: $black;
         margin-bottom: 5px;
 }
 .btn-sm {
-        background-color: $white;
+        background-color: $black;
         display: inline-block;
 }
 img,
@@ -56,4 +66,17 @@ caption {
         float: left;
         clear: both;
 
+}
+
+.liy-brand {
+	color: $green;
+	font-size: 32px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.liy-brand-shrink {
+	color: $green;
+	font-size: 16px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
 }
