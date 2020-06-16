@@ -17,11 +17,20 @@ $green: green;
 	transition: all 0.4s ease;
 	height: 25px;
 }
+.slide {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding-top: 150px;
+}
+main {
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	padding-top: 50px;
+}
 body {
         background: $white;
         color: pink;
         font-family: 'Merriweather', sans-serif;
-	padding-top: 50px;
 }
 h1,
 h2 {

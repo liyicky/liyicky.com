@@ -7,3 +7,10 @@ $(window).scroll(function() {
     $('.liy-brand').removeClass('liy-brand-shrink')
   }
 });
+
+$(document).ready(function() {
+
+  $('#liy-nav-button').click(function() {
+    $('main').toggleClass('slide');
+  });
+});
