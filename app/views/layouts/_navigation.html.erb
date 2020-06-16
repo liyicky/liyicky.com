@@ -1,14 +1,14 @@
 <nav class="navbar navbar-light navbar-static-top navbar-expand-md fixed-top">
     <div class="container">
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"> <span class="sr-only">Toggle navigation</span>
-        </button> <%= link_to "liyicky.com", root_path, class: 'navbar-brand liy-brand' %>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-          <ul class="nav navbar-nav mr-auto">
-             <li class='nav-item'><%= link_to 'Home', root_path, class: 'nav-link' %></li>
-            <li class='nav-item'><%= link_to 'Sharks', posts_path, class: 'nav-link' %></li>
-
-                </li>
-            </ul>
-        </div>
-    </div>
+      <%= link_to "liyicky.com", root_path, class: 'navbar-brand liy-brand' %>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class='nav-item'><%= link_to 'Home', root_path, class: 'nav-link' %></li>
+          <li class='nav-item'><%= link_to 'Sharks', posts_path, class: 'nav-link' %></li>
+        </ul>
+      </div>
+  </div>
 </nav>
