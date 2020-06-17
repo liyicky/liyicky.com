@@ -10,3 +10,7 @@
   </script>
 
   <%= render @posts %>
+
+  <div id="infinite-scrolling">
+    <%= will_paginate @posts %>
+  </div>
