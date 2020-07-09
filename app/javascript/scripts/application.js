@@ -13,4 +13,8 @@ $(document).ready(function() {
   $('#liy-nav-button').click(function() {
     $('main').toggleClass('slide');
   });
+      $("#post_body").keyup(function() {
+        var x = $("#post_body").val();
+	$("#preview").html(marked(x));
+      });
 });
