@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 55) {
     $('nav').addClass('shrink');
     $('.liy-brand').addClass('liy-brand-shrink')
   } else {

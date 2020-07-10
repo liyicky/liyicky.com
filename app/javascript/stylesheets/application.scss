@@ -10,12 +10,12 @@ $green: green;
 	background: $white;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	height: 50px;
+	height: 55px;
 }
 .shrink {
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
-	height: 25px;
+	height: 55px;
 }
 .slide {
 	-webkit-transition: all 0.4s ease;
@@ -29,7 +29,7 @@ main {
 }
 body {
         background: $white;
-        color: pink;
+        color: $black;
         font-family: 'Merriweather', sans-serif;
 }
 h1,
