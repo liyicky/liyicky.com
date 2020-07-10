@@ -15,6 +15,8 @@ $(document).ready(function() {
   });
       $("#post_body").keyup(function() {
         var x = $("#post_body").val();
-	$("#preview").html(marked(x));
+	var markeddown = marked(x);
+	$("#preview").html(markeddown);
+	$("#html-injector").val(markeddown);
       });
 });
