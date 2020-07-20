@@ -19,4 +19,10 @@ $(document).ready(function() {
 	$("#preview").html(markeddown);
 	$("#html-injector").val(markeddown);
       });
+$(".liy-post-container").hover(function(){
+    $(this).toggleClass('highlight');
+    }, function(){
+    $(this).toggleClass('highlight');
+  });
+
 });

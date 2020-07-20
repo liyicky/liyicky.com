@@ -4,6 +4,7 @@
 $white: white;
 $black: black;
 $green: green;
+$highlight: #efefef;
 
 .navbar {
         margin-bottom: 0;
@@ -76,6 +77,8 @@ caption {
         clear: both;
 
 }
+.show-header {
+}
 
 .liy-brand {
 	color: $green;
@@ -86,6 +89,24 @@ caption {
 .liy-brand-shrink {
 	color: $green;
 	font-size: 16px;
+	-webkit-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+}
+.liy-main-image {
+	width: 150px;
+	height: 100px;
+}
+.liy-post-container {
+	padding-top: 5px;
+}
+.liy-post-container a {
+	text-decoration: none;
+}
+.liy-post-container p {
+	color: #7b7474;
+}
+.highlight {
+	background-color: $highlight;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
 }

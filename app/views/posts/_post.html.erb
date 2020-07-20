@@ -1,10 +1,15 @@
-<div class="jumbotron">
-  <h1 class="display-4"><%= post.title %></h1>
-  <%= image_tag post.main_image %>
-  <p class="lead"><%= truncate(strip_tags(post.body), length: 600) %></p>
-  <hr class="my-4">
-  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-  <p class="lead">
-    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-  </p>
+<div class="container liy-post-container">
+  <a href="<%= post_path(post) %>">
+  <div class="row">
+    <div class="col-md-auto">
+      <%= image_tag post.main_image, class: "liy-main-image" %>
+    </div>
+    <div class="col col-lg-8">
+      <h4><%= post.title %></h1>
+      <p><%= post.description %></p>
+      <hr class="my-4">
+      <p class="liy-post-author">Jason Cheladyn</p> 
+    </div>
+  </div>
+  </a>
 </div>
