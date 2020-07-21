@@ -13,16 +13,20 @@ $(document).ready(function() {
   $('#liy-nav-button').click(function() {
     $('main').toggleClass('slide');
   });
-      $("#post_body").keyup(function() {
-        var x = $("#post_body").val();
-	var markeddown = marked(x);
-	$("#preview").html(markeddown);
-	$("#html-injector").val(markeddown);
-      });
-$(".liy-post-container").hover(function(){
+  $("#post_body").keyup(function() {
+    var x = $("#post_body").val();
+    var markeddown = marked(x);
+    $("#html-injector").val(markeddown);
+  });
+  $("#html-injector").keyup(function() {
+    var x = $("#html-injector").val();
+    var markeddown = marked(x);
+    $("#preview").html(markeddown);
+  });
+  $(".liy-post-container").hover(function(){
     $(this).toggleClass('highlight');
-    }, function(){
+  },
+  function(){
     $(this).toggleClass('highlight');
   });
-
 });

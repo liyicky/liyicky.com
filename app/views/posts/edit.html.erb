@@ -5,6 +5,8 @@
     <p>
      <%= f.label :title %>
      <%= f.text_field :title %>
+     <%= f.label :description %>
+     <%= f.text_field :description %>
     </p>
   </div>
   <div class="row">
@@ -15,11 +17,19 @@
       </p>
     </div>
     <div class="col">
+      <p>
+        <%= f.label :html %>
+        <%= f.text_area :html, id: "html-injector" %>
+      </p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">
       <div id="preview"></div>
     </div>
   </div>
   <div class="row">
-    <%= f.hidden_field :html, id: 'html-injector' %>
+  <!-- <%= f.hidden_field :html, id: 'html-injector' %> --!>
     <p>
       <%= f.submit %>
     </p>
