@@ -7,8 +7,8 @@
     <div class="col col-lg-8">
       <h4><%= post.title %></h1>
       <p><%= post.description %></p>
-      <hr class="my-4">
-      <p class="liy-post-author">Jason Cheladyn</p> 
+      <hr class="my-1">
+      <p class="liy-post-author">Jason Cheladyn - <%= post.created_at.strftime("%B %d") %></p>
     </div>
   </div>
   </a>

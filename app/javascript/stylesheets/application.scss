@@ -31,10 +31,11 @@ main {
 body {
         background: $white;
         color: $black;
-        font-family: 'Merriweather', sans-serif;
+        font-family: 'Mulish', sans-serif;
 }
 h1,
-h2 {
+h2,
+h4{
         font-weight: bold;
 }
 p {
@@ -109,4 +110,8 @@ caption {
 	background-color: $highlight;
 	-webkit-transition: all 0.4s ease;
 	transition: all 0.4s ease;
+}
+.liy-post-author {
+	color: $black !important;
+	font-size: 12px;
 }
