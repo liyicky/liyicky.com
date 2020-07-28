@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   has_one_attached :main_image
   validate :acceptable_image
+  validates :title, :description, :main_image, presence: true
 
   def acceptable_image
     return unless main_image.attached?

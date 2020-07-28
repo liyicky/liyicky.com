@@ -89,8 +89,10 @@ textarea {
 	transition: all 0.4s ease;
 }
 .liy-main-image {
-	width: 150px;
-	height: 100px;
+  	display: block;
+  	max-width:275px;
+  	width: auto;
+  	height: auto;
 }
 .liy-post-container {
 	padding-top: 5px;
