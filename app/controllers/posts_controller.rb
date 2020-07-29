@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_action :authenticate, only: [:new, :edit]
 
   def new
     @post = Post.new 
@@ -27,5 +28,11 @@ class PostsController < ApplicationController
   private
     def post_params
       params.require(:post).permit(:title, :body, :main_image, :html, :description)
+    end
+
+    def authenticate
+      if params["pass"] != ENV["PASS"]
+        redirect_to youdidntsaythemagicword_path 
+      end
     end
 end
