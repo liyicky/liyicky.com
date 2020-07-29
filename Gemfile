@@ -7,6 +7,7 @@ gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'will_paginate', '~> 3.1.0'
 gem 'bootstrap-will_paginate', '~> 0.0.10'
 gem 'delayed_job_active_record'
+gem "aws-sdk-s3", require: false
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.0.3', '>= 6.0.3.1'
