@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.7.1'
+ruby '2.7.2'
 
 gem 'nokogiri', '~> 1.6', '>= 1.6.8'
 gem 'will_paginate', '~> 3.1.0'

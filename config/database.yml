@@ -25,5 +25,9 @@ test:
 
 production:
   <<: *default
-  database: liyicky-prod 
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: <%= ENV['RDS_DB_NAME'] %> 
+  password: <%= ENV['RDS_DB_PASS'] %>
+  username: <%= ENV['RDS_USERNAME'] %>
+  host: <%= ENV['RDS_HOSTNAME'] %>
+  port: <%= ENV['RDS_PORT'] %>
+
