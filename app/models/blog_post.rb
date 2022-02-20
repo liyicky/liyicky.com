@@ -1,14 +1,17 @@
 class BlogPost < ApplicationRecord
-  include HTTParty 
 
-  ACCESS_TOKEN = ENV["MEDIUM_ACCESS_TOKEN"]
+    def self.sync_posts
+        data = MediumApi.parsed_posts
+        for post in data
+            title = post["title"]
+            date = post["pubDate"].to_datetime
+            link = post["link"]
+            body = post["encoded"]
 
-  def self.fetch
-    response = HTTParty.get("https://api.medium.com/v1/me", {
-      headers: {"Authorization" => "Bearer #{ACCESS_TOKEN}
-"}, debug_output: STDOUT })
+            post = BlogPost.find_or_create_by(created_at: date)
+            post.update(title: title, link: link, body: body)
+            post.save
+        end
+    end
 
-    puts response
-
-  end
 end
