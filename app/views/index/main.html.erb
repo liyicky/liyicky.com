@@ -1,0 +1,7 @@
+<p style="color: green"><%= notice %></p>
+
+<div id="blog_posts" class="row row-cols-auto">
+  <% @blog_posts.each do |blog_post| %>
+    <%= render blog_post %>
+  <% end %>
+</div>

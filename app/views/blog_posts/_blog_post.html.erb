@@ -1,7 +1,7 @@
-<div id="<%= dom_id blog_post %>">
-  <p>
-    <strong>Title:</strong>
-    <%= blog_post.title %>
-  </p>
-
+<div id="<%= dom_id blog_post %>" class="col">
+  <a href="<%= blog_post.link %>">
+    <p>
+      <%= blog_post.title %>
+    </p>
+  </a>
 </div>
