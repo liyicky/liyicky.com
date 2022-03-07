@@ -14,4 +14,11 @@ class BlogPost < ApplicationRecord
         end
     end
 
+    def image_urls
+        html = Nokogiri::HTML(self.body)
+        image_tags = html.xpath("//img")
+        image_urls = image_tags.map { |t| t[:src] }
+    end
+
+
 end

@@ -30,12 +30,17 @@
       
   }
 
-  #blog_post {
-    background-color: #1E5128 !important;
+  .blog_post {
     color: #D8E9A8 !important;
-    margin: auto;
+    margin: 1%;
   }
 
+  .image-holder {
+    max-width: 200px;
+    max-height: 200px;
+    overflow: hidden;
+  }
+  
   /* unvisited link */
   a:link {
     color: #D8E9A8 !important;
