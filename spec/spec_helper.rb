@@ -1,6 +1,9 @@
 require 'simplecov'
 SimpleCov.start 'rails'
 
+require 'webmock/rspec'
+WebMock.disable_net_connect!
+
 # TODO
 # Coverage may not be working because of spring. https://github.com/simplecov-ruby/simplecov#want-to-use-spring-with-simplecov
 # Rails.application.eager_load! 

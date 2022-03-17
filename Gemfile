@@ -59,6 +59,7 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
+  gem "pry"
 end
 
 group :development do
@@ -81,4 +82,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
   gem 'simplecov', require: false
+  gem 'webmock'
 end
