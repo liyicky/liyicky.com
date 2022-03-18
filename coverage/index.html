@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-17T10:06:58+09:00">2022-03-17T10:06:58+09:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-18T20:04:09+09:00">2022-03-18T20:04:09+09:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  50.0%
+  53.13%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.79
+         1.97
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>70</b> relevant lines,
-    <span class="green"><b>35</b> lines covered</span> and
-    <span class="red"><b>35</b> lines missed. </span>
+    <b>64</b> relevant lines,
+    <span class="green"><b>34</b> lines covered</span> and
+    <span class="red"><b>30</b> lines missed. </span>
     (<span class="red">
-  50.0%
+  53.13%
 </span>
 )
   </div>
@@ -204,12 +204,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ce2742262f57842f8d9f30d0a28ab1c8a8a64ac5" class="src_link" title="app/models/medium_api.rb">app/models/medium_api.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">68.75 %</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">0.69</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.20</td>
             
           </tr>
         
@@ -406,15 +406,15 @@
   <h2>
     <span class="group_name">Models</span>
     (<span class="covered_percent">
-      <span class="red">
-  72.73%
+      <span class="yellow">
+  81.58%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.77
+         3.24
        </span>
     </span> hits/line
     )
@@ -427,11 +427,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>44</b> relevant lines,
-    <span class="green"><b>32</b> lines covered</span> and
-    <span class="red"><b>12</b> lines missed. </span>
-    (<span class="red">
-  72.73%
+    <b>38</b> relevant lines,
+    <span class="green"><b>31</b> lines covered</span> and
+    <span class="red"><b>7</b> lines missed. </span>
+    (<span class="yellow">
+  81.58%
 </span>
 )
   </div>
@@ -478,12 +478,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#ce2742262f57842f8d9f30d0a28ab1c8a8a64ac5" class="src_link" title="app/models/medium_api.rb">app/models/medium_api.rb</a></td>
-            <td class="red strong cell--number t-file__coverage">68.75 %</td>
-            <td class="cell--number">35</td>
-            <td class="cell--number">16</td>
-            <td class="cell--number">11</td>
-            <td class="cell--number">5</td>
-            <td class="cell--number">0.69</td>
+            <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">21</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">0</td>
+            <td class="cell--number">1.20</td>
             
           </tr>
         
@@ -1925,8 +1925,8 @@
   <div class="header">
     <h3>app/models/medium_api.rb</h3>
     <h4>
-      <span class="red">
-  68.75%
+      <span class="green">
+  100.0%
 </span>
 
       lines covered
@@ -1935,9 +1935,9 @@
     
 
     <div class="t-line-summary">
-      <b>16</b> relevant lines.
-      <span class="green"><b>11</b> lines covered</span> and
-      <span class="red"><b>5</b> lines missed.</span>
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
+      <span class="red"><b>0</b> lines missed.</span>
     </div>
 
     
@@ -2031,18 +2031,18 @@
 
             
 
-            <code class="ruby">    def self.fetch_user</code>
+            <code class="ruby">    def self.fetch_posts</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="9">
-            
-            
-
+          <li class="covered" data-hits="2" data-linenumber="9">
+            <span class="hits">2</span>
             
 
-            <code class="ruby">        response = HTTParty.get(&quot;https://api.medium.com/v1/me&quot;, {</code>
+            
+
+            <code class="ruby">        response = HTTParty.get(&quot;https://medium.com/feed/@liyicky&quot;)</code>
           </li>
         </div>
       
@@ -2053,46 +2053,13 @@
 
             
 
-            <code class="ruby">            headers: HEADERS, </code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="11">
-            
-            
-
-            
-
-            <code class="ruby">            debug_output: STDOUT</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="12">
-            
-            
-
-            
-
-            <code class="ruby">        })</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="13">
-            
-            
-
-            
-
             <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="14">
-            
+          <li class="covered" data-hits="2" data-linenumber="11">
+            <span class="hits">2</span>
             
 
             
@@ -2102,128 +2069,7 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="15">
-            
-            
-
-            
-
-            <code class="ruby">            JSON.parse response.body</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="16">
-            
-            
-
-            
-
-            <code class="ruby">        else</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="missed" data-hits="0" data-linenumber="17">
-            
-            
-
-            
-
-            <code class="ruby">            raise response.response</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="18">
-            
-            
-
-            
-
-            <code class="ruby">        end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="19">
-            
-            
-
-            
-
-            <code class="ruby">    end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="20">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="21">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">    def self.fetch_posts</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="22">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        response = HTTParty.get(&quot;https://medium.com/feed/@liyicky&quot;)</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="23">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="24">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">        if response.success?</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="25">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">            binding.pry</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="26">
+          <li class="covered" data-hits="1" data-linenumber="12">
             <span class="hits">1</span>
             
 
@@ -2234,7 +2080,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="27">
+          <li class="never" data-hits="" data-linenumber="13">
             
             
 
@@ -2245,18 +2091,18 @@
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="28">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="14">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">            raise response.response</code>
+            
+
+            <code class="ruby">            raise Exception.new(&quot;medium fetch_posts api request failed&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="29">
+          <li class="never" data-hits="" data-linenumber="15">
             
             
 
@@ -2267,7 +2113,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="30">
+          <li class="never" data-hits="" data-linenumber="16">
             
             
 
@@ -2278,7 +2124,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="31">
+          <li class="never" data-hits="" data-linenumber="17">
             
             
 
@@ -2289,7 +2135,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="32">
+          <li class="covered" data-hits="1" data-linenumber="18">
             <span class="hits">1</span>
             
 
@@ -2300,7 +2146,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="33">
+          <li class="covered" data-hits="1" data-linenumber="19">
             <span class="hits">1</span>
             
 
@@ -2311,7 +2157,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="34">
+          <li class="never" data-hits="" data-linenumber="20">
             
             
 
@@ -2322,7 +2168,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="35">
+          <li class="never" data-hits="" data-linenumber="21">
             
             
 
