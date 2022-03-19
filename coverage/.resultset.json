@@ -1,25 +1,41 @@
 {
   "RSpec": {
     "coverage": {
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/application_helper.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/application_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/blog_posts_helper.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/blog_posts_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/index_helper.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/helpers/index_helper.rb": {
         "lines": [
           1,
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/blog_post.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/index_controller.rb": {
+        "lines": [
+          1,
+          null,
+          1,
+          2,
+          null,
+          null
+        ]
+      },
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/blog_post.rb": {
         "lines": [
           1,
           null,
@@ -32,20 +48,20 @@
           null,
           null,
           1,
-          11,
-          11,
-          11,
-          11,
+          14,
+          14,
+          14,
+          14,
           null,
-          11,
-          11,
-          11,
+          14,
+          14,
+          14,
           null,
           null,
           1,
           2,
           2,
-          13,
+          16,
           2,
           2,
           null,
@@ -53,14 +69,14 @@
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/application_record.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/application_record.rb": {
         "lines": [
           1,
           1,
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/medium_api.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/medium_api.rb": {
         "lines": [
           1,
           1,
@@ -68,6 +84,19 @@
           null,
           null,
           1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           1,
           2,
@@ -85,7 +114,7 @@
           null
         ]
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/channels/application_cable/channel.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/channels/application_cable/channel.rb": {
         "lines": [
           0,
           0,
@@ -95,7 +124,7 @@
         "branches": {
         }
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/channels/application_cable/connection.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/channels/application_cable/connection.rb": {
         "lines": [
           0,
           0,
@@ -105,7 +134,7 @@
         "branches": {
         }
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/application_controller.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/blog_posts_controller.rb": {
         "lines": [
           0,
           0
@@ -113,27 +142,7 @@
         "branches": {
         }
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/blog_posts_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/controllers/index_controller.rb": {
-        "lines": [
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/jobs/application_job.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/jobs/application_job.rb": {
         "lines": [
           0,
           null,
@@ -146,23 +155,8 @@
         "branches": {
         }
       },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/mailers/application_mailer.rb": {
+      "/Users/liyicky/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/mailers/application_mailer.rb": {
         "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Volumes/GoogleDrive/My Drive/Code/Projects/Web/Sites/liyicky.com/liyickyv5/app/models/user.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          0,
-          0,
           0,
           0,
           0,
@@ -172,6 +166,6 @@
         }
       }
     },
-    "timestamp": 1647601449
+    "timestamp": 1647685814
   }
 }

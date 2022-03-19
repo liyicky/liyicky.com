@@ -81,6 +81,7 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
   gem "webdrivers"
-  gem 'simplecov', require: false
-  gem 'webmock'
+  gem "simplecov", require: false
+  gem "webmock"
+  gem "rails-controller-testing"
 end
