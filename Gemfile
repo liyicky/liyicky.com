@@ -7,6 +7,9 @@ gem "httparty"
 gem "dotenv-rails"
 gem "bootstrap", "~> 5.1.3"
 gem "nokogiri"
+gem "devise"
+gem "devise-jwt"
+gem "rack-cors"
 
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
