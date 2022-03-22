@@ -1,5 +1,6 @@
-class Users::RegistrationsController < Devise::RegistrationsController
-    response_to :json
+class Mountain::Api::Users::RegistrationsController < Devise::RegistrationsController
+    skip_forgery_protection
+    respond_to :json
 
     private
 

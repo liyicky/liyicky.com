@@ -1,11 +1,18 @@
 Rails.application.routes.draw do
-  devise_for :users
-  root to: 'index#main'
-  
 
+  root to: "index#main"
 
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  namespace :mountain do
+    namespace :api do
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+      devise_for :users,
+      controllers: {
+        sessons: "mountain/api/users/sessions",
+        registrations: "mountain/api/users/registrations"
+      }
+
+      get "/member-data", to: "member#show"
+    end
+  end
+
 end

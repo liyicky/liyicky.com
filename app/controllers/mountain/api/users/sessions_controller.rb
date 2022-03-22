@@ -1,4 +1,5 @@
-class Users::SessionsController < Devise::SessionsController
+class Mointain::Api::Users::SessionsController < Devise::SessionsController
+    skip_forgery_protection
     respond_to :json
 
     private
