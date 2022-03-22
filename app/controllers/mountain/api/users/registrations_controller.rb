@@ -4,8 +4,12 @@ class Mountain::Api::Users::RegistrationsController < Devise::RegistrationsContr
 
     private
 
-    def response_with(resource, _opts = {})
-        register_sucess && return if resource.persisted?
+    def sign_up_params
+        params.require(:user).permit(:email, :password, :password_confirmation)
+    end
+
+    def respond_with(resource, _opts = {})
+        register_success && return if resource.persisted?
 
         register_failed
     end
