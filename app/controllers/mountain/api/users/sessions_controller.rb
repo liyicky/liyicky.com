@@ -1,4 +1,4 @@
-class Mointain::Api::Users::SessionsController < Devise::SessionsController
+class Mountain::Api::Users::SessionsController < Devise::SessionsController
     skip_forgery_protection
     respond_to :json
 
@@ -12,15 +12,16 @@ class Mointain::Api::Users::SessionsController < Devise::SessionsController
     end
 
     def respond_to_on_destroy
-        log_out_sucess && return if current_user
+        log_out_success && return if current_user
 
         log_out_failure
     end
 
-    def log_out_sucess
+    def log_out_success
         render json: { message: "You are logged out." }, status: :ok
     end
 
     def log_out_failure
         render json: { message: "Hm something got fucked up friend." }, status: :unauthorized
     end
+end

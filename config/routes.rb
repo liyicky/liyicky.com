@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   scope "/mountain/api" do
     devise_for :users,
     controllers: {
-      sessons: "mountain/api/users/sessions",
+      sessions: "mountain/api/users/sessions",
       registrations: "mountain/api/users/registrations"
     }
 

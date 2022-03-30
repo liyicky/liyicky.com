@@ -1,4 +1,5 @@
 class MembersController < ApplicationController
+    skip_forgery_protection
     before_action :authenticate_user!
 
     def show
