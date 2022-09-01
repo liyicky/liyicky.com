@@ -1,10 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Liyickyv5</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Liyicky</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+
+    <link rel="shortcut icon" type="image/png" href="assets/favicon-310x310.png">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
@@ -20,8 +30,28 @@
     </script>
   </head>
 
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-light">
+  <body id="homefirstpage">
+      <!-- Navbar -->
+    <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container">
+          <a class="navbar-brand" href="/"><img id="navbar-brand-img" src="assets/LiyickyLogoBlack.png"></a>
+          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="navbar-collapse collapse" id="navbarColor02" style="">
+              <ul class="navbar-nav mr-auto d-flex align-items-center">
+                <%= render "menu-header" %>
+              </ul>
+              <ul class="navbar-nav ml-auto d-flex align-items-center">
+                  <form class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
+                    <input type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter..."> 
+                  </form>
+              </ul>
+          </div>
+      </div>
+    </nav>
+
+    <%# <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Liyicky</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,9 +68,13 @@
           </ul>
         </div>
       </div>
-    </nav>
-    <div class="container">
-      <%= yield %>
-    </div>
+    </nav> %>
+    <main role="main" class="site-content">
+      <div class="container">
+        <%= yield %>
+      </div>
+    </main>
+
+    <%= render "footer" %>
   </body>
 </html>
