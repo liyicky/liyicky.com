@@ -1,7 +1,46 @@
 <p style="color: green"><%= notice %></p>
 
-<div id="blog_posts" class="row row-cols-auto">
-  <% @blog_posts.each do |blog_post| %>
-    <%= render blog_post %>
-  <% end %>
+<div id="blog_posts" class="row remove-site-content-margin">
+
+  <div class="col-md-6">
+    <div class="card border-0 mb-4 box-shadow">
+      <a href="<%= @latest_post.link %>">
+        <div class="topfirstimage" style="background-image: url(<%= @latest_post.image_urls.sample %>); height: 200px; background-size: cover; background-repeat: no-repeat;"></div>
+      </a>
+      <div class="card-body px-0 pb-0 d-flex flex-column align-items-start">
+        <h2 class="h4 font-weight-bold">
+          <a class="text-dark" href="<%= @latest_post.link %>"><%= @latest_post.title %></a>
+        </h2>
+        <p class="excerpt">
+          <%= @latest_post.body.truncate(136) %>
+        </p>
+        <div>
+          <small class="text-muted">
+              <%= @latest_post.created_at %>
+          </small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6">
+    <%= render "latest_post", post: @second_latest_post %>
+    <%= render "latest_post", post: @third_latest_post %>
+    <%= render "latest_post", post: @fourth_latest_post %>
+  </div>
+
+  <div class="row mt-3"> 
+    <div class="col-md-8 main-loop">    
+      <h4 class="font-weight-bold spanborder"><span>All Stories</span></h4>
+
+      <% @other_posts.each do |post| %>
+        <%= render "post", post: post %>
+      <% end %>
+    </div>
+
+    <div class="col-md-4">
+      
+    </div>
+  </div>
+  
 </div>

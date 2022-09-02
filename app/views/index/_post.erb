@@ -1,0 +1,18 @@
+<div class="mb-5 d-flex justify-content-between main-loop-card">
+    <div class="pr-3">
+        <h2 class="mb-1 h4 font-weight-bold">
+        <a class="text-dark" href="<%= post.link %>"><%= post.title %></a>
+        </h2>
+        <p class="excerpt">
+        <%= post.body.truncate(136) %>
+        </p>
+        <small class="text-muted">
+            <%= post.created_at %>
+        </small>
+    </div>
+    <div class="col-md-3 pr-0 text-right">
+        <a href="<%= post.link %>">
+            <img class="w-100" src="<%= post.image_urls.sample %>" alt="<%= post.title %>">
+        </a>
+    </div>
+</div>
