@@ -12,11 +12,11 @@
           <a class="text-dark" href="<%= @latest_post.link %>"><%= @latest_post.title %></a>
         </h2>
         <p class="excerpt">
-          <%= @latest_post.body.truncate(136) %>
+          <%= @latest_post.sanitized_body.truncate(136) %>
         </p>
         <div>
           <small class="text-muted">
-              <%= @latest_post.created_at %>
+              <%= @latest_post.formatted_date %>
           </small>
         </div>
       </div>
@@ -36,10 +36,19 @@
       <% @other_posts.each do |post| %>
         <%= render "post", post: post %>
       <% end %>
+
+      <a href="https://medium.com/@liyicky" class="btn btn-dark liy-btn">
+        Read More
+      </a>
     </div>
 
     <div class="col-md-4">
-      
+      <div class="sticky-top sticky-top-offset">
+        <h4 class="font-weight-bold spanborder"><span>Projects</span></h4>  
+        <ol class="list-featured">				
+            
+        </ol>
+    </div> 
     </div>
   </div>
   

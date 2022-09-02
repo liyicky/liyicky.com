@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root to: "index#main"
+  get 'contact', to: 'index#contact', as: 'contact'
 
   scope "/mountain/api" do
     devise_for :users,

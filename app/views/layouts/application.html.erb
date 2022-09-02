@@ -34,18 +34,13 @@
       <!-- Navbar -->
     <nav id="MagicMenu" class="topnav navbar navbar-expand-lg navbar-light bg-white fixed-top">
       <div class="container">
-          <a class="navbar-brand" href="/"><img id="navbar-brand-img" src="assets/LiyickyLogoBlack.png"></a>
-          <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
+          <a href="/"><img id="navbar-brand-img" src="assets/LiyickyLogoBlack.png"></a>
+          <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="navbar-collapse collapse" id="navbarColor02" style="">
               <ul class="navbar-nav mr-auto d-flex align-items-center">
                 <%= render "menu-header" %>
-              </ul>
-              <ul class="navbar-nav ml-auto d-flex align-items-center">
-                  <form class="bd-search hidden-sm-down" onSubmit="return lunr_search(document.getElementById('lunrsearch').value);">
-                    <input type="text" class="form-control text-small"  id="lunrsearch" name="q" value="" placeholder="Type keyword and enter..."> 
-                  </form>
               </ul>
           </div>
       </div>
@@ -70,7 +65,7 @@
       </div>
     </nav> %>
     <main role="main" class="site-content">
-      <div class="container">
+      <div class="container liy-container">
         <%= yield %>
       </div>
     </main>

@@ -27,4 +27,12 @@ class BlogPost < ApplicationRecord
         image_urls
     end
 
+    def sanitized_body
+        ActionView::Base.full_sanitizer.sanitize(self.body, tags:[])
+    end
+
+    def formatted_date
+        self.created_at.strftime("%m/%d/%Y")
+    end
+
 end

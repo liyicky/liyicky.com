@@ -19,8 +19,22 @@
  @import "main";
  @import "mundana";
 
+ @font-face {
+  font-family: "Baileyns";
+  src:  url('<%= asset_path("Baileyns.woff2") %>') format('woff2'),
+        url('<%= asset_path("Baileyns.woff") %>') format('woff');
+ }
+
 #navbar-brand-img {
-  width: 50px;
-  height: 50px;
+  width: 75px;
+  height: 75px;
+}
+
+.liy-container {
+  padding-top: 0.5%
+}
+
+.liy-btn {
+  margin-bottom: 5%
 }
 
