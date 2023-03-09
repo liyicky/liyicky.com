@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root to: "index#main"
   get 'contact', to: 'index#contact', as: 'contact'
+  
+  get '/downloads/animalization', to: 'downloads#animalization_assets'
 
   scope "/mountain/api" do
     devise_for :users,
