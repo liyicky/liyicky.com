@@ -25,6 +25,11 @@
         url('<%= asset_path("Baileyns.woff") %>') format('woff');
  }
 
+  @font-face {
+  font-family: "Rowdies";
+  src:  url('<%= asset_path("Rowdies-Regular") %>') format('ttf'),
+ }
+
 .navbar-brand-img {
   width: 1.55em;
 }
@@ -39,6 +44,26 @@
 
 .liy-btn {
   margin-bottom: 5%
+}
+
+.liy-img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto; /* Adjust the width as needed */
+  height: auto; /* Maintain the aspect ratio */
+  border-radius: 8px; /* Apply rounded corners */
+  
+}
+
+/* Style for the "Rowdies" font class */
+.rowdies {
+  font-family: "Rowdies", cursive;
+  text-rendering: optimizeLegibility;
+  letter-spacing: 0.05em;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #333333;
+  padding: 10px;
 }
 
 .poster {

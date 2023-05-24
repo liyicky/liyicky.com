@@ -15,4 +15,11 @@ class IndexController < ApplicationController
             format.html { render :contact }
         end
     end
+
+
+    def drivejuku
+        respond_to do |format|
+            format.html { render :drivejuku }
+        end
+    end
 end

@@ -2,6 +2,7 @@ Rails.application.routes.draw do
 
   root to: "index#main"
   get 'contact', to: 'index#contact', as: 'contact'
+  get 'drivejuku', to: 'index#drivejuku', as: 'drivejuku'
   
   get '/downloads/animalization', to: 'downloads#animalization_assets'
 
