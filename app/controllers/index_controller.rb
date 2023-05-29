@@ -22,4 +22,10 @@ class IndexController < ApplicationController
             format.html { render :drivejuku }
         end
     end
+
+    def drivejuku_privacy
+        respond_to do |format|
+            format.html { render :drivejuku_privacy }
+        end
+    end
 end
